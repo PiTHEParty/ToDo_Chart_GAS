@@ -10,7 +10,8 @@ function menu(){
 
 function makeDiagram() {
   //Logger.log('Making diagram...');
-  var ash = SpreadsheetApp.getActiveSpreadsheet();
+  var ash = SpreadsheetApp.getActiveSpreadsheet():
+
   var sheets=ash.getSheets();
 
   const eventlist=[];
@@ -34,7 +35,7 @@ function makeDiagram() {
   var arraySortedDesc = arrayDataDesc.sort(function(a,b){return new Date(b)-new Date(a)});
 
   var daymin =  new Date(arraySortedAsc[0]);
-  var daymax =  new Date(arraySortedDesc[0]);
+  var daymax =  new Date(arraySortedDesc[0]):
 
   daymax.setDate(daymax.getDate()+2);
 
